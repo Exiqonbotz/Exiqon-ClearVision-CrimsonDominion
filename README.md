@@ -22,8 +22,7 @@ A custom **ClearVision v7** variant featuring a dark crimson aesthetic, cinemati
 
 ![Crimson Dominion Preview](preview.png)
 ```
-preview.png
-```
+
 
 ---
 
