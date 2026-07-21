@@ -1,0 +1,197 @@
+/**
+ * @name Exiqon Dark Matter Crimson Dominion for BetterDiscord
+ * @author ClearVision Team
+ * @version 1.0.0
+ * @description Highly customizable theme for BetterDiscord.
+ * @source https://github.com/ClearVision/ClearVision-v7
+ * @website https://clearvision.github.io
+ * @invite dHaSxn3
+ */
+/* IMPORT CSS */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
+/* SETTINGS */
+:root {
+  /* ========================= */
+  /* ACCENT COLORS */
+  /* ========================= */
+
+  --main-color: #6c121e;
+  --hover-color: #8a2231;
+  --success-color: #43b581;
+  --danger-color: #6c121e;
+
+  /* ========================= */
+  /* STATUS COLORS */
+  /* ========================= */
+
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #6c121e;
+  --streaming-color: #4d1730;
+  --offline-color: #6d6d6d;
+
+  /* ========================= */
+  /* WALLPAPER */
+  /* ========================= */
+
+  --background-shading-percent: 5%;
+  --background-image: url("https://raw.githubusercontent.com/Exiqonbotz/random/refs/heads/main/Exiqon%20Dark%20Matter%20Crimson%20Dominion.jfif");
+  --background-position: center;
+  --background-size: cover;
+  --background-attachment: fixed;
+
+  /* Dunkler & cineastischer */
+/* Wallpaper Filter */
+--background-filter:
+    brightness(.90)
+    contrast(1.18)
+    saturate(1.30);
+
+  /* ========================= */
+  /* USER POPOUT */
+  /* ========================= */
+
+  --user-popout-image: var(--background-image);
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-attachment: fixed;
+  --user-popout-filter: var(--background-filter);
+
+  /* ========================= */
+  /* USER MODAL */
+  /* ========================= */
+
+  --user-modal-image: var(--background-image);
+  --user-modal-position: center;
+  --user-modal-size: cover;
+  --user-modal-attachment: fixed;
+  --user-modal-filter: var(--background-filter);
+
+  /* ========================= */
+  /* HOME ICON */
+  /* ========================= */
+
+  --home-icon: url("https://clearvision.github.io/icons/discord.svg");
+  --home-size: cover;
+
+  /* ========================= */
+  /* FONTS */
+  /* ========================= */
+
+  --main-font: "gg sans","Segoe UI",sans-serif;
+  --code-font: Consolas,"gg mono",monospace;
+
+  /* ========================= */
+  /* CHANNELS */
+  /* ========================= */
+
+  --channel-normal: var(--interactive-text-default);
+  --channel-muted: var(--interactive-muted);
+  --channel-hover: #ffffff;
+  --channel-selected: #ffffff;
+  --channel-selected-bg: rgba(108,18,30,.45);
+  --channel-unread: #8a2231;
+  --channel-unread-hover: #b13449;
+
+  /* ========================= */
+  /* ACCESSIBILITY */
+  /* ========================= */
+
+  --focus-color: var(--main-color);
+}
+
+/* THEME SPECIFIC SHADING */
+/* LIGHT THEME */
+:is(.theme-light, .theme-dark .theme-light) {
+  --background-shading: rgba(252, 252, 252, 0.3); /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --card-shading: rgba(252, 252, 252, 0.3); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --popout-shading: rgba(252, 252, 252, 0.7); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
+  --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(0, 0, 0, 0.3); /* inputs background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --normal-text: #36363c; /* text color [default: #36363c] */
+  --muted-text: #75757e; /* muted text color [default: #75757e] */
+}
+
+/* ASH THEME */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0, 0, 0, 0.4); /* app background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --card-shading: rgba(0, 0, 0, 0.2); /* cards background shading color [default: rgba(0, 0, 0, 0.2)] */
+  --popout-shading: rgba(0, 0, 0, 0.6); /* popouts background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --modal-shading: rgba(0, 0, 0, 0.4); /* modals background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #d8d8db; /* text color [default: #d8d8db] */
+  --muted-text: #aeaeb4; /* muted text color [default: #aeaeb4] */
+}
+
+/* DARK THEME */
+:is(.theme-darker, .theme-light .theme-darker) {
+  --background-shading: rgba(0, 0, 0, 0.6); /* app background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --card-shading: rgba(0, 0, 0, 0.3); /* cards background shading color [default: rgba(0, 0, 0, 0.3)] */
+  --popout-shading: rgba(0, 0, 0, 0.7); /* popouts background shading color [default: rgba(0, 0, 0, 0.7)] */
+  --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #fbfbfb; /* text color [default: #fbfbfb] */
+  --muted-text: #94949c; /* muted text color [default: #94949c] */
+}
+
+/* ONYX THEME */
+:is(.theme-midnight, .theme-light .theme-midnight) {
+  --background-shading: rgba(0, 0, 0, 0.8); /* app background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --card-shading: rgba(0, 0, 0, 0.4); /* cards background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --popout-shading: rgba(0, 0, 0, 0.8); /* popouts background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --modal-shading: rgba(0, 0, 0, 0.6); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #dcdcde; /* text color [default: #dcdcde] */
+  --muted-text: #86868e; /* muted text color [default: #86868e] */
+}
+
+/* ADD ADDITIONAL CSS BELOW HERE */
+
+
+/* Kill every divider */
+
+[class*="divider"],
+[class*="separator"],
+hr{
+    display:none !important;
+    border:none !important;
+}
+/* ===== Remove all panel borders ===== */
+
+.sidebar_c48ade,
+.sidebarRegion__60457,
+.container__2637a,
+.container_c2739c,
+.content_f75fb0,
+.chat_f75fb0,
+.membersWrap_c8ffbb,
+.container__9293f,
+.container__551b0,
+.base_c48ade{
+
+    border: none !important;
+    box-shadow: none !important;
+
+}
+
+/* obere Leiste */
+
+.header__104ca,
+.title_f75fb0,
+.title_c38106,
+.toolbar__9293f{
+
+    border-bottom: none !important;
+    box-shadow: none !important;
+
+}
+/* Nuclear option */
+
+*::before,
+*::after{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
